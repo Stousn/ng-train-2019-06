@@ -1,0 +1,11 @@
+<div>
+  <label>Original Value:</label>
+  <input id="original" type="number" placeholder="Original value..." [(ngModel)]="originalValue" />
+</div>
+<div>
+  <label>Value with interests:</label>
+  <input id="interest" type="number" placeholder="Value with interests..." [(ngModel)]="valueWithInterests" />
+</div>
+<button id="calc" (click)="calculate()">Calculate</button>
+
+<h2>The interest rate is <span id="result">{{ result | percent }}</span></h2>

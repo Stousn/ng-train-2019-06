@@ -1,0 +1,5 @@
+<svg width="800" height="300">
+    <rect *ngFor="let v of values; index as i;"
+      [attr.x]="i * 22 + 10" [attr.y]="10 + (280 - v)" width="20" [attr.height]="v"
+      fill="red" />
+</svg>
